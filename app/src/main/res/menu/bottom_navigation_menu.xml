@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_games"
+        android:enabled="true"
+        android:icon="@drawable/ic_games"
+        android:title="@string/games"/>
+    <item
+        android:id="@+id/menu_standings"
+        android:enabled="true"
+        android:icon="@drawable/ic_standings"
+        android:title="@string/standings"/>
+    <item
+        android:id="@+id/menu_top_scorer"
+        android:enabled="true"
+        android:icon="@drawable/ic_top_scorer"
+        android:title="@string/top_scorer"/>
+</menu>

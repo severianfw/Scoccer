@@ -1,8 +1,10 @@
-package com.severianfw.scoccer;
+package com.severianfw.scoccer.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.severianfw.scoccer.R;
 
 public class RegisterActivity extends AppCompatActivity {
 
