@@ -6,6 +6,16 @@
     tools:context=".view.games.GamesTabFragment"
     android:paddingHorizontal="24dp">
 
+    <TextView
+        android:id="@+id/tv_empty_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:text="@string/there_is_no_schedule_on_this_date"/>
+
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/srl_games"
         android:layout_width="match_parent"

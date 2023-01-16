@@ -49,6 +49,7 @@ class GamesViewModel : ViewModel() {
       }
 
       override fun onFailure(call: Call<List<GamesResponseItem>>, t: Throwable) {
+        _games.value = listOf()
         _isLoading.value = false
       }
     })

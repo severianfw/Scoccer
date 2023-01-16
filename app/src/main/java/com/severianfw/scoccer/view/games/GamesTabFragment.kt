@@ -58,9 +58,14 @@ class GamesTabFragment : Fragment() {
 
   private fun setupRecyclerView(items: List<GamesUiModel>) {
     if (context != null) {
-      viewBinding.rvGames.apply {
-        layoutManager = LinearLayoutManager(context)
-        adapter = GamesListAdapter(items)
+      if (items.isEmpty()) {
+        viewBinding.tvEmptyState.visibility = View.VISIBLE
+      } else {
+        viewBinding.tvEmptyState.visibility = View.GONE
+        viewBinding.rvGames.apply {
+          layoutManager = LinearLayoutManager(context)
+          adapter = GamesListAdapter(items)
+        }
       }
     }
   }
